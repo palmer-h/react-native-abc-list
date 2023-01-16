@@ -95,7 +95,7 @@ Extends React Native's [SectionList](https://reactnative.dev/docs/sectionlist#pr
 | Prop | Description | Type |
 | --- | --- | --- |
 | `data` | Items to be sorted and rendered in the `SectionList`. Each item **must** have a unique `key` property. | `array` | | |
-| `sortBy` | The string used to sort the rendered items, A-Z. Each data item **must have a property key that matches this string**. | `string` |
+| `sortBy` | The string used to sort the rendered items, A-Z. Each data item **must have a `string` property with a key that matches this string**. | `string` |
 | `renderCustomItem` (optional) | Render a custom row element for each row. If not passed, the default row renders the item key. | `() => JSX.Element` |
 | `renderCustomSectionHeader` (optional) | Render a custom element for each section header. If not passed, the default header renders the section letter in uppercase. | `() => JSX.Element` |
 ## **Contributing**
