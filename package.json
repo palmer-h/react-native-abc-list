@@ -125,8 +125,13 @@
           "quoteProps": "consistent",
           "singleQuote": true,
           "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
+          "useTabs": false,
+          "arrowParens": "avoid",
+          "bracketSameLine": true,
+          "bracketSpacing": true,
+          "trialingComma": true,
+          "semi": true,
+          "printWidth": 100
         }
       ]
     }

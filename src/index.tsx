@@ -1,3 +1,2 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+export { AbcList } from './components/AbcList/index';
+export { AbcListProps } from './components/AbcList/interfaces';
