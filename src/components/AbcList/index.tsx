@@ -61,7 +61,9 @@ export const AbcList: React.FC<AbcListProps> = props => {
     }
     return (
       <View style={styles.sectionHeaderContainer}>
-        <Text style={styles.sectionHeaderLabel}>{section.title}</Text>
+        <Text style={styles.sectionHeaderLabel} testID="sectionHeader__text">
+          {section.title}
+        </Text>
       </View>
     );
   };
@@ -72,7 +74,7 @@ export const AbcList: React.FC<AbcListProps> = props => {
     }
     return (
       <View style={styles.listItemContainer}>
-        <Text>{item.key}</Text>
+        <Text testID="listItem__text">{item.key}</Text>
       </View>
     );
   };
@@ -87,6 +89,7 @@ export const AbcList: React.FC<AbcListProps> = props => {
         renderItem={renderListItem}
         renderSectionHeader={renderSectionHeader}
         onViewableItemsChanged={handleViewableItemsChanged}
+        testID="abcSectionList"
       />
       <LetterIndex
         letters={letters}

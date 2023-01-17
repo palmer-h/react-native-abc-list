@@ -9,6 +9,7 @@ export const LetterIndex: React.FC<LetterIndexProps> = props => {
       {props.letters.map(letter => (
         <Pressable key={letter} onPress={() => props.onPressLetter(props.letters.indexOf(letter))}>
           <Text
+            testID="indexLetter__text"
             style={[
               { color: props.letterColor || '#195dae' },
               styles.letterText,
