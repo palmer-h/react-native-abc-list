@@ -19,7 +19,7 @@ describe('AbcList', () => {
       key: 'key-3',
       firstName: 'John',
       surname: 'Coltrane',
-    }
+    },
   ];
 
   beforeEach(() => {
